@@ -12,10 +12,12 @@ function App() {
   return (
     <ThemeProvider defaultTheme="system">
       <BrowserRouter>
-        <div className="flex flex-col min-h-screen w-full overflow-x-hidden">
-          <Header />
-          <div className="flex flex-1 overflow-hidden">
-            <Sidebar />
+        <div className="flex min-h-screen">
+          <Sidebar />
+
+          <div className="flex flex-col flex-1 overflow-hidden">
+            <Header />
+
             <div className="flex-1 min-w-0 overflow-y-auto">
               <Routes>
                 <Route element={<HomeScreen />} path="/" />

@@ -29,7 +29,7 @@ function Sidebar() {
   ];
 
   return (
-    <div className="w-40 flex flex-col space-y-4 items-center">
+    <div className="w-40 pt-5 flex flex-col space-y-4 items-center bg-secondary">
       {items.map((item) => (
         <Button
           variant={"ghost"}
